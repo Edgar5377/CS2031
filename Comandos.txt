@@ -1,0 +1,15 @@
+-- Crear un entorno virtual con python
+python -m venv env
+
+--Desactivar entorno global
+conda deactivate
+
+--Activar entorno virtual creado 
+source env/vin/activate
+
+--Crear un documento para guardar nuestras librerias usadas(requirements.txt)
+pip freeze > requirements.txt
+
+--Instalar requirements.txt en nuestro entorno virtual
+pip install -r requirements.txt
+
